@@ -1,0 +1,31 @@
+# David Huang
+# Data Science Take Home #1
+
+def count_vowels(word):
+    count = 0
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    for i in word:
+        if(i.lower() in vowels):
+            count += 1
+
+    return count
+
+print(count_vowels("Anejicoku"))
+
+animals = ['tiger', 'elephant', 'monkey', 'zebra', 'panther']
+for i in range(len(animals)):
+    print(animals[i].upper())
+
+for i in range(1, 21):
+    if((i % 2) == 0):
+        print("Even: " + str(i))
+    elif((i % 2) != 0):
+        print("Odd: " + str(i))
+
+def sum_of_integers(a, b):
+    return (int(a) + int(b))
+
+int1 = input("Please enter first integer: ")
+int2 = input("Please enter second integer: ")
+
+print(sum_of_integers(int1, int2))
